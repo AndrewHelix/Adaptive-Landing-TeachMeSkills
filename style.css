@@ -247,10 +247,10 @@ button:focus {
     display: none;
   }
 
-  .nav-list {
+  /* .nav-list {
     font-size: 13px;
     line-height: calc(15/13 * 100%);
-  }
+  } */
   
   .logo-icon {
     width: 54px;
@@ -272,16 +272,9 @@ button:focus {
   .header-title::after {
     margin: 60px auto 0 auto;
     width: 134px;
-    height: 4px;
   }
 
   .btn-learn-more {
-    margin: 48px auto 0 auto;
-    padding: 13px 0;
     max-width: 285 px;
-    font-size: 18px;
-    line-height: calc(21/18 * 100%);
   }
-
-
 }
