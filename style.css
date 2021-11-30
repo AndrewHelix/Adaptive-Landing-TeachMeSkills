@@ -232,6 +232,56 @@ button:focus {
     font-size: 18px;
     line-height: calc(21/18 * 100%);
   }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-bottom: 95.75px;
+  }
+
+  .header-wrapper {
+    padding: 19px 0;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-list {
+    font-size: 13px;
+    line-height: calc(15/13 * 100%);
+  }
+  
+  .logo-icon {
+    width: 54px;
+    height: auto;
+  }
+
+  .header .crative-text{
+    margin-top: 34px;
+    font-size: 36px;
+    line-height: calc(52/36 * 100%);
+  }
+
+  .header-title {
+    font-size: 48px;
+    margin-top: 54px;
+    line-height: calc(59/48 * 100%);
+  }
+
+  .header-title::after {
+    margin: 60px auto 0 auto;
+    width: 134px;
+    height: 4px;
+  }
+
+  .btn-learn-more {
+    margin: 48px auto 0 auto;
+    padding: 13px 0;
+    max-width: 285 px;
+    font-size: 18px;
+    line-height: calc(21/18 * 100%);
+  }
 
 
 }
