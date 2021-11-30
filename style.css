@@ -63,7 +63,7 @@ button:focus {
 
 /*===== Header =====*/
 .header {
-  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(./assets/img/header.jpg) 0 0 / cover no-repeat; 
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(./assets/img/header.jpg) center / cover no-repeat; 
   padding-bottom: 201px;
 }
 
