@@ -64,7 +64,8 @@ button:focus {
 /*===== Header =====*/
 .header {
   background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(./assets/img/header.jpg) center / cover no-repeat; 
-  padding-bottom: 201px;
+  /* padding-bottom: 201px; */
+  height: 100vh;
 }
 
 .header-wrapper {
@@ -187,7 +188,7 @@ button:focus {
 
 @media (max-width: 1024px) {
   .header {
-    padding-bottom: 136px;
+    /* padding-bottom: 136px; */
   }
 
   .container {
@@ -236,7 +237,7 @@ button:focus {
 
 @media (max-width: 600px) {
   .header {
-    padding-bottom: 95.75px;
+    /* padding-bottom: 95.75px; */
   }
 
   .header-wrapper {
