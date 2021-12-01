@@ -162,9 +162,8 @@ button:focus {
   background-color: #FFFFFF;
 }
 
-.btn-learn-more {
+.btn {
   display: block;
-  margin: 72px auto 0 auto;
   padding: 21px 0;
   max-width: 370px;
   width: 100%;
@@ -175,6 +174,10 @@ button:focus {
   text-transform: uppercase;
   background-color: Transparent;
   cursor: pointer;
+}
+
+.btn-learn-more {
+  margin: 72px auto 0 auto;
 }
 
 .btn-learn-more:hover {
@@ -226,12 +229,15 @@ button:focus {
     height: 4px;
   }
 
-  .btn-learn-more {
-    margin: 48px auto 0 auto;
+  .btn {
     padding: 13px 0;
     max-width: 318 px;
     font-size: 18px;
     line-height: calc(21/18 * 100%);
+  }
+
+  .btn-learn-more {
+    margin: 48px auto 0 auto;
   }
 }
 
