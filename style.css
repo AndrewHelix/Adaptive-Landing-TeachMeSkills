@@ -189,13 +189,15 @@ button:focus {
   border: 4px solid #F4BF87;
 }
 
+@media (max-width: 1215px) {
+  .container {
+    padding: 0 16px;
+  }
+} 
+
 @media (max-width: 1024px) {
   .header {
     /* padding-bottom: 136px; */
-  }
-
-  .container {
-    padding: 0 16px;
   }
 
   .header-wrapper {
