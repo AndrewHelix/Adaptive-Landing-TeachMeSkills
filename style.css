@@ -93,10 +93,10 @@ button:focus {
 
 .nav-item {
   max-width: 114px;
-  width: 100%;
   position: relative;
   cursor: pointer;
   transition: 0.3s linear;
+  text-align: center;
 }
 
 .nav-icons {
@@ -124,7 +124,7 @@ button:focus {
   top:100%;
   left:50%;
   transform:translate(-50%,-50%);
-  width: 85px;
+  width: 130%;
   height: 1px;
   background-color: #F4BF87;
   opacity: 0;
