@@ -57,7 +57,7 @@ button:focus {
 
 .container {
   max-width: 1200px;
-  
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@ button:focus {
 .header {
   background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(./assets/img/header.jpg) center / cover no-repeat; 
   /* padding-bottom: 201px; */
-  height: 100vh;
+  height: 1000px;
 }
 
 .header-wrapper {
@@ -255,11 +255,6 @@ button:focus {
   .nav {
     display: none;
   }
-
-  /* .nav-list {
-    font-size: 13px;
-    line-height: calc(15/13 * 100%);
-  } */
   
   .logo-icon {
     width: 54px;
@@ -287,3 +282,104 @@ button:focus {
     max-width: 285 px;
   }
 }
+
+/*===== Main =====*/
+
+/* futures */
+.futures {
+  background-color: #95E1D3;
+}
+
+.futures-inner {
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.futures-item {
+  max-width: 254px;
+  width: 100%;
+  border-right: 1px #fff solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 63.5px 0;
+  gap: 30px;
+  color: #FFFFFF;
+}
+
+.futures-item:first-child {
+  border-left: 1px #fff solid;
+}
+
+.futures-item-num {
+  font-size: 64px;
+  line-height: calc(75/64 * 100%);
+  font-weight: bold;
+}
+
+.future-item-text {
+  font-size: 24px;
+  line-height: calc(28/24 * 100%);
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .futures-item {
+    max-width: 198px;
+    padding: 38.5px 0;
+    gap: 15px;
+  }
+
+  .futures-item-num {
+    font-size: 48px;
+    line-height: calc(56/48 * 100%);
+    font-weight: bold;
+  }
+
+  .future-item-text {
+    font-size: 18px;
+    line-height: calc(21/18 * 100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .futures-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .futures-item {
+    flex: 33.333%;
+    border-right: none;
+    border-bottom: 1px #fff solid;
+  }
+
+  .futures-item:first-child {
+    border-left: none;
+  }
+
+  .futures-item:nth-child(n+4) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 444px) {
+  .futures-item {
+    flex: 50%;
+    border-right: none;
+    border-bottom: 1px #fff solid;
+    padding: 16.5px 0;
+  }
+
+  .futures-item:nth-child(n+4) {
+    border-bottom: 1px #fff solid;
+  }
+
+  .futures-item:last-child {
+    border-bottom: none;
+  }
+}
+
+/* we work with */
