@@ -392,7 +392,8 @@ button:focus {
 
 .creative-subtitle {
   font-size: 30px;
-  line-height: calc(80/30 * 100%);
+  line-height: calc(44/30 * 100%);
+  padding: 18px 0;
   color: #2D3033;
   font-family: 'Kaushan Script', cursive;
   text-align: center;
@@ -407,7 +408,8 @@ button:focus {
   position: relative;
   font-weight: 900;
   font-size: 36px;
-  line-height: calc(80/36 * 100%);
+  line-height: calc(42/36 * 100%);
+  padding: 19px 0;
   /* text-align: center; */
   text-transform: uppercase;
 }
@@ -464,12 +466,14 @@ button:focus {
 
   .creative-subtitle {
     font-size: 24px;
-    line-height: 67px;
+    line-height: calc(35/24 * 100%);
+    padding: 16px 0;
   }
 
   .section-title {
     font-size: 24px;
-    line-height: 68px;
+    line-height: calc(28/24 * 100%);
+    padding: 20px 0;
   }
 
   .section-title::after {
@@ -508,5 +512,103 @@ button:focus {
 
   .amazing-cards {
     row-gap: 36px;
+  }
+}
+
+/* unique design */
+.unique-design {
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.8) 100%, rgba(255, 255, 255, 0.8) 100%), url(./assets/img/unique-design.jpg) center / cover no-repeat;
+  margin-top: 91px;
+  padding-top: 42px;
+  padding-bottom: 57px;
+}
+
+.devices {
+  margin-top: 83px;
+  position: relative;
+}
+
+.devices-tablet{
+  display: block;
+  object-fit: cover;
+  width: 59%;
+  margin: 0 auto;
+  background: url(./assets/img/tablet-fon.jpg) center / 95% 95% no-repeat;
+}
+
+.devices-iphone {
+  position: absolute;
+  width: 17%;
+  right: 17%;
+  bottom: -85px;
+  background: url(./assets/img/iphone-fon.png) center / 97% 97% no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .unique-design {
+    padding-top: 28.5px;
+    padding-bottom: 39px;
+  }
+
+  .creative-subtitle-mod {
+    padding: 10px 0;
+  }
+
+  .section-title-mod {
+    padding: 13.5px 0;
+  }
+
+  .devices {
+    margin-top: 56px;
+  }
+
+  .devices-tablet {
+    width: 47%;
+  }
+
+  .devices-iphone {
+    width: 14%;
+    right: 24%;
+    bottom: -65px;
+  }
+}
+
+@media (max-width: 568px) {
+  .unique-design {
+    padding-top: 43px;
+    padding-bottom: 25px;
+  }
+
+  .creative-subtitle {
+    font-size: 30px;
+    line-height: calc(44/30 * 100%);
+  }
+
+  .creative-subtitle-mod {
+    padding: 20px 0;
+  }
+
+  .section-title {
+    font-size: 36px;
+    line-height: calc(42/36 * 100%);
+    padding: 21px 0;
+  }
+  
+  .section-title-mod {
+    padding: 21px 0;
+  }
+
+  .devices {
+    margin-top: 61px;
+  }
+
+  .devices-tablet {
+    width: 100%;
+  }
+
+  .devices-iphone {
+    width: 30%;
+    right: 11%;
+    bottom: -50px;
   }
 }
