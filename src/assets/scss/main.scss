@@ -1141,8 +1141,8 @@ $mt84: 84px;
       justify-content: space-between;
 
       img {
-        max-width: 130/1510 * 100vw;
-        max-height: 130/1510 * 100vw;
+        max-width: 130px;
+        max-height: 130px;
       }
 
       &-main-info {
@@ -1179,6 +1179,15 @@ $mt84: 84px;
         @extend %text-common;
         text-transform: none;
       }
+    }
+  }
+}
+
+@media (max-width: 1510px) {
+  .clients__card {
+    img {
+      max-width: 130/1510 * 100vw;
+      max-height: 130/1510 * 100vw;
     }
   }
 }
