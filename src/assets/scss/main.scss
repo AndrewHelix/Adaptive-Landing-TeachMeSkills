@@ -583,6 +583,7 @@ button:focus {
 
 @media (max-width: 568px) {
   .unique-design {
+    margin-top: var(--mt84);
     padding-top: 43px;
     padding-bottom: 25px;
   }
@@ -804,11 +805,11 @@ button:focus {
 
 /* our work */
 
-.our-work {
+.our-work-gallery {
   margin-top: var(--mt84);
 }
 
-.out-work-galerry {
+.gallery-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -906,7 +907,7 @@ button:focus {
 }
 
 @media (max-width: 1024px) {
-  .out-work-galerry {
+  .gallery-wrapper {
     margin-top: 29px;
   }
 
@@ -935,7 +936,7 @@ button:focus {
 }
 
 @media (max-width: 500px) {
-  .out-work-galerry {
+  .gallery-wrapper {
     margin-top: 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -1026,9 +1027,9 @@ button:focus {
 .watches,
 .comments {
   display: flex;
-  justify-content: space-between;
+  column-gap: 16px;
   align-items: center;
-  width: 40%;
+  width: 45%;
 }
 
 .watches-count,
@@ -1085,6 +1086,11 @@ button:focus {
     line-height: calc(14 / 12 * 100%);
   }
 
+  .watches,
+  .comments {
+    column-gap: 13px;
+  }
+
   .watches svg,
   .comments svg {
     height: 27px !important;
@@ -1121,6 +1127,7 @@ $mt84: 84px;
 
 .clients {
   margin-top: $mt84;
+  padding-bottom: 42px;
   background: linear-gradient(
       360deg,
       rgba(255, 255, 255, 0.9) 100%,
@@ -1139,6 +1146,7 @@ $mt84: 84px;
     .clients__card {
       display: flex;
       justify-content: space-between;
+      column-gap: 50px;
 
       img {
         max-width: 130px;
@@ -1204,6 +1212,7 @@ $mt84: 84px;
 
   .clients {
     margin-top: $mt84;
+    padding-bottom: 29px;
 
     &__cards {
       margin-top: 44px;
@@ -1239,7 +1248,17 @@ $mt84: 84px;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
+  .clients {
+    &__cards {
+      .clients__card {
+        column-gap: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
   $mt84: 29px;
 
   %text-common {
