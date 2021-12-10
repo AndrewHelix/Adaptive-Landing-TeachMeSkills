@@ -646,9 +646,9 @@ button:focus {
   column-gap: 29px;
 }
 
-.team-photo {
+/* .team-photo {
   width: 100%;
-}
+} */
 
 .team-username {
   font-size: 24px;
@@ -721,6 +721,14 @@ button:focus {
   transform: translate3d(-16px, -16px, 0);
 }
 
+@media (max-width: 1510px) {
+
+  .team-photo-wrapper {
+    height: 35vw;
+  }
+  
+}
+
 @media (max-width: 1024px) {
   :root {
     --mt84: 58px;
@@ -780,6 +788,7 @@ button:focus {
 
   .team-photo-wrapper {
     max-height: 236px;
+    height: 50vw;
   }
 
   .team-photo {
