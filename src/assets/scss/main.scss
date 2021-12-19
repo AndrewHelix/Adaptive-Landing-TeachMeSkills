@@ -1582,8 +1582,9 @@ $mt84: 84px;
     }
 
     img {
-      max-width: 170px;
-      width: 100%;
+      /* max-width: 170px; */
+      width: 170px;
+      height: 100%;
     }
 
     &__title {
@@ -1601,10 +1602,12 @@ $mt84: 84px;
 }
 
 @media (max-width: 1510px) {
-  .blog-post {
-    img {
-      width: 11.25vw;
-      height: 6.95vw;
+  .footer__blog {
+    .blog-post {
+      img {
+        width: 11.25vw;
+        height: 6.95vw;
+      }
     }
   }
 }
