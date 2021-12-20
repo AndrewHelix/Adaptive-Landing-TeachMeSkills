@@ -1381,8 +1381,11 @@ $mt84: 84px;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #c6cbcd;
+    column-gap: 30px;
 
     .follow-text {
+      max-width: 70px;
+      width: 100%;
       font-style: italic;
       font-weight: normal;
       font-size: 13px;
@@ -1390,8 +1393,7 @@ $mt84: 84px;
       color: #c6cbcd;
     }
 
-    .follow-icons {
-      max-width: 269px;
+    .follow-icons { 
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -1477,14 +1479,16 @@ $mt84: 84px;
 
     &-links {
       padding: 0;
+      column-gap: 20px;
 
       .follow-text {
+        max-width: 64px;
         font-size: 12px;
         line-height: 14/12 * 100%;
       }
 
       .follow-icons {
-        max-width: 233.24px;
+        
         width: 100%;
 
         svg {
@@ -1539,10 +1543,6 @@ $mt84: 84px;
 
     &-followers {
       text-align: center;
-    }
-
-    .follow-icons {
-      max-width: 205px;
     }
 
     .subscribe-form {
